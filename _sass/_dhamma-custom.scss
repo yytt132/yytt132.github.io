@@ -6,6 +6,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans
 .masthead__menu-item a { font-weight: 600; }
 
 .layout--dhamma-home #main.dh-home { width: calc(100% - 48px); max-width: 900px; margin: 0 auto; padding: 0 0 100px; }
+.dh-home, .layout--single .page__title, .layout--single .page__content { word-break: keep-all; overflow-wrap: break-word; }
 .dh-home__intro { padding: 68px 0 62px; }
 .dh-home__eyebrow { margin: 0 0 16px; color: #bd1e17; font-size: 13px; font-weight: 800; letter-spacing: -.01em; }
 .dh-home__intro h1 { margin: 0 0 16px; color: #111; font-size: 47px; line-height: 1.35; letter-spacing: -.055em; font-weight: 800; }
