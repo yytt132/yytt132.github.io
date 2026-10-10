@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -21,7 +21,7 @@ title                    : "DhammaReader 연구노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DhammaReader"
-description              : "한국어로 불교를 읽고, 묻고, 연결하는 과정."
+description              : "DhammaReader를 만들며 확인한 자료와 결정, 남은 문제를 기록합니다."
 url                      : "https://yytt132.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "yytt132/yytt132.github.io"
@@ -115,16 +115,16 @@ analytics:
 author:
   name             : "DhammaReader"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "한국어 불교 지식의 길을 잇는 연구 기록."
-  location         : "Somewhere"
+  bio              : "한국어 불교 자료를 찾고 정리하는 과정을 기록합니다."
+  location         :
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "경전 읽기"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://dhammareader.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
