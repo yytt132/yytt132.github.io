@@ -18,6 +18,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans
 .dh-featured { min-height: 420px; display: flex; flex-direction: column; justify-content: space-between; padding: 30px 34px; background: #111; color: #fff; text-decoration: none; position: relative; overflow: hidden; transition: transform .18s ease, box-shadow .18s ease; }
 .dh-featured:before { content: ''; position: absolute; width: 220px; height: 220px; border: 1px solid #444; border-radius: 50%; top: -94px; right: -60px; pointer-events: none; }
 .dh-featured:hover { color: #fff; transform: translateY(-3px); box-shadow: 0 16px 34px rgba(0,0,0,.16); }
+.dh-home a.dh-featured:link, .dh-home a.dh-featured:visited, .dh-home a.dh-featured:hover, .dh-home a.dh-featured:focus { color: #fff; text-decoration: none; }
 .dh-featured__top,.dh-featured__bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; position: relative; z-index: 1; }
 .dh-featured__label { display: inline-block; padding: 6px 10px; color: #fff; background: #d00000; font-size: 12px; font-weight: 700; }
 .dh-featured__number { color: #666; font-size: 38px; font-weight: 800; line-height: 1; }
@@ -29,6 +30,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans
 .dh-home__side { display: flex; flex-direction: column; gap: 22px; }
 .dh-post-card { min-height: 225px; display: flex; flex-direction: column; padding: 26px 28px; border: 1px solid #dedede; color: #111; text-decoration: none; position: relative; transition: border-color .18s ease, box-shadow .18s ease; }
 .dh-post-card:hover { color: #111; border-color: #111; box-shadow: 0 8px 22px rgba(0,0,0,.07); }
+.dh-home a.dh-post-card:link, .dh-home a.dh-post-card:visited, .dh-home a.dh-post-card:hover, .dh-home a.dh-post-card:focus { color: #111; text-decoration: none; }
 .dh-post-card__meta { display: flex; justify-content: space-between; gap: 10px; color: #777; font-size: 12px; }
 .dh-post-card__title { display: block; margin: 21px 0 7px; padding-right: 20px; font-size: 24px; font-weight: 800; letter-spacing: -.045em; line-height: 1.45; }
 .dh-post-card__excerpt { display: block; color: #555; font-size: 14px; line-height: 1.7; }
