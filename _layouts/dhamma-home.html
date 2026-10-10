@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div id="main" class="dh-home" role="main">
+  <header class="dh-home__intro">
+    <p class="dh-home__eyebrow">DHAMMAREADER <span aria-hidden="true">/</span> 연구노트</p>
+    <h1>DhammaReader를<br>만들며 적은 글</h1>
+    <p>불교 자료를 한국어로 찾고 읽는 과정에서 생긴 문제를 살펴봅니다. 어떤 자료를 확인했고 왜 설계를 바꿨는지 남깁니다.</p>
+  </header>
+
+  {% assign featured = site.posts.first %}
+  {% if featured %}
+  <section class="dh-home__posts" aria-labelledby="dh-posts-title">
+    <div class="dh-home__section-head">
+      <h2 id="dh-posts-title">최근 글</h2>
+      <span>{{ site.posts.size }}편의 글</span>
+    </div>
+    <div class="dh-home__grid">
+      <a class="dh-featured" href="{{ featured.url | relative_url }}">
+        <span class="dh-featured__top"><span class="dh-featured__label">가장 최근 글</span><span class="dh-featured__number" aria-hidden="true">01</span></span>
+        <span class="dh-featured__body"><span class="dh-featured__title">{{ featured.title }}</span><span class="dh-featured__excerpt">{{ featured.excerpt | strip_html | strip }}</span></span>
+        <span class="dh-featured__bottom"><time datetime="{{ featured.date | date: '%Y-%m-%d' }}">{{ featured.date | date: site.date_format }}</time><span>글 읽기 <span aria-hidden="true">↗</span></span></span>
+      </a>
+      <div class="dh-home__side">
+        {% for post in site.posts offset:1 limit:3 %}
+        <a class="dh-post-card" href="{{ post.url | relative_url }}">
+          <span class="dh-post-card__meta"><span>연구 기록 {{ forloop.index | plus: 1 | prepend: '0' }}</span><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: site.date_format }}</time></span>
+          <span class="dh-post-card__title">{{ post.title }}</span>
+          <span class="dh-post-card__excerpt">{{ post.excerpt | strip_html | strip }}</span>
+          <span class="dh-post-card__arrow" aria-hidden="true">↗</span>
+        </a>
+        {% endfor %}
+        <div class="dh-home__reader">
+          <span>경전을 읽으려면</span>
+          <p>경전 본문은 DhammaReader에서 볼 수 있습니다.</p>
+          <a href="https://dhammareader.com">dhammareader.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="dh-home__about" aria-labelledby="dh-about-title">
+    <div><p class="dh-home__eyebrow">이 블로그에 대해</p><h2 id="dh-about-title">무엇을 기록하나</h2></div>
+    <div><p>용어와 문헌을 대조한 내용, 기능을 만들거나 미룬 이유, 다음에 확인할 문제를 적습니다. 경전을 읽는 웹사이트와 작업 기록을 구분해 운영합니다.</p><a href="{{ '/about.html' | relative_url }}">블로그 소개 보기 <span aria-hidden="true">↗</span></a></div>
+  </section>
+</div>
