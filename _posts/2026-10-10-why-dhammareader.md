@@ -4,7 +4,7 @@ title: "왜 DhammaReader를 만드는가"
 date: 2026-10-10
 permalink: /posts/why-dhammareader.html
 excerpt: "한국어 불교 자료를 찾으면서 겪는 불편과 이 프로젝트에서 해보려는 일."
-author_profile: true
+author_profile: false
 read_time: false
 share: false
 related: false

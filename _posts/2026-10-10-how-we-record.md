@@ -4,7 +4,7 @@ title: "작업을 다시 시작할 때 필요한 기록"
 date: 2026-10-10
 permalink: /posts/how-we-record.html
 excerpt: "결정한 이유, 미뤄둔 문제, 다음에 할 일을 GitHub에 남기는 방법."
-author_profile: true
+author_profile: false
 read_time: false
 share: false
 related: false
